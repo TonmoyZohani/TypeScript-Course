@@ -1,3 +1,5 @@
 "use strict";
-// Type Aliases
-// Literal Ty
+// Literal types
+let myName;
+let userName;
+userName = 'Amy';

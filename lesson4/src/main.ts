@@ -1,15 +1,18 @@
-// Type Aliases
+// Type Aliases 
+type stringOrNumber = string | number
 
-type stringNumber = string | number;
-
-type stringOrNumberArray = (string | number)[];
+type stringOrNumberArray = (string | number)[]
 
 type Guitarist = {
-  name?: string;
-  active: boolean;
-  albums: stringOrNumberArray;
-};
+    name?: string,
+    active: boolean,
+    albums: stringOrNumberArray
+}
 
-type userId = stringNumber;
+type UserId = stringOrNumber
 
-// Literal Ty
+// Literal types
+let myName: 'Dave'
+
+let userName: 'Dave' | 'John' | 'Amy'
+userName = 'Amy'
