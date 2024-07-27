@@ -39,5 +39,9 @@ let jp = {
     name: "Karim",
     albums: ["Cosmic", "Dark2", 12, 25],
 };
+const greetGuitarist = (guitarist) => {
+    return `Hello ${guitarist.name},What's Up?`;
+};
+console.log(greetGuitarist(evh));
 console.log(evh);
 console.log(jp);
