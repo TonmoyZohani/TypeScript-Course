@@ -11,7 +11,7 @@ let test = [];
 let bands = [];
 bands.push("Van Halen");
 console.log(bands);
-bands[1] = 'Artcell';
+bands[1] = "Artcell";
 console.log(bands);
 bands.push("Miles");
 console.log(bands);
@@ -26,16 +26,7 @@ console.log(typeof myObj);
 myObj = bands;
 myObj = {};
 const exampleObj = {
-    prop1: 'Dave',
+    prop1: "Dave",
     prop2: true,
 };
-exampleObj.prop1 = 'John';
-let evh = {
-    name: 'Eddie',
-    active: false,
-    albums: [1984, 5150, 'OU812']
-};
-let jp = {
-    active: true,
-    albums: ['I', 'II', 'IV']
-};
+exampleObj.prop1 = "John";

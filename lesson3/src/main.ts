@@ -15,7 +15,7 @@ let test = [];
 let bands: string[] = [];
 bands.push("Van Halen");
 console.log(bands);
-bands[1]='Artcell';
+bands[1] = "Artcell";
 console.log(bands);
 bands.push("Miles");
 console.log(bands);
@@ -28,32 +28,40 @@ let mixed = ["John", 1, false];
 myTuple[1] = 42;
 
 // Objects
-let myObj: object
-myObj = []
-console.log(typeof myObj)
-myObj = bands
-myObj = {}
+let myObj: object;
+myObj = [];
+console.log(typeof myObj);
+myObj = bands;
+myObj = {};
 
 const exampleObj = {
-    prop1: 'Dave',
-    prop2: true,
-}
+  prop1: "Dave",
+  prop2: true,
+};
 
-exampleObj.prop1 = 'John'
+exampleObj.prop1 = "John";
 
-interface Guitarist {
-    name?: string,
-    active: boolean,
-    albums: (string | number)[]
-}
+// interface Guitarist {
+//     name?: string,
+//     active: boolean,
+//     albums: (string | number)[]
+// }
 
-let evh: Guitarist = {
-    name: 'Eddie',
-    active: false,
-    albums: [1984, 5150, 'OU812']
-}
+// let evh: Guitarist = {
+//     name: 'Eddie',
+//     active: false,
+//     albums: [1984, 5150, 'OU812']
+// }
 
-let jp: Guitarist = {
-    active: true,
-    albums: ['I', 'II', 'IV']
-}
+// let jp: Guitarist = {
+//     active: true,
+//     albums: ['I', 'II', 'IV']
+// }
+
+type Guitarist = {
+  name: string;
+  active: boolean;
+  albums: (string | number)[];
+};
+
+
