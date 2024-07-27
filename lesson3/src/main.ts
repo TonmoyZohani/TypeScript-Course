@@ -58,11 +58,17 @@ exampleObj.prop1 = "John";
 //     albums: ['I', 'II', 'IV']
 // }
 
-type Guitarist = {
-  name: string;
-  active?: boolean;
+// type Guitarist = {
+//   name: string;
+//   active?: boolean;
+//   albums: (string | number)[];
+// };
+
+interface Guitarist {
+  name?: string;
+  active: boolean;
   albums: (string | number)[];
-};
+}
 
 let evh: Guitarist = {
   name: "Tonmoy",
@@ -71,15 +77,20 @@ let evh: Guitarist = {
 };
 
 let jp: Guitarist = {
-  name: "Karim",
+  //   name: "Karim",
+  active: true,
   albums: ["Cosmic", "Dark2", 12, 25],
 };
 
 const greetGuitarist = (guitarist: Guitarist) => {
-  return `Hello ${guitarist.name},What's Up?`;
+  if (guitarist.name) {
+    return `Hello ${guitarist.name?.toUpperCase()},What's Up?`;
+  }
+
+  return "Hello!!";
 };
 
-console.log(greetGuitarist(evh));
+console.log(greetGuitarist(jp));
 
 console.log(evh);
 console.log(jp);

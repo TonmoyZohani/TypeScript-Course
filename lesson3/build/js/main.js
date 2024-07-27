@@ -36,12 +36,17 @@ let evh = {
     albums: ["Dark", "Player", 83],
 };
 let jp = {
-    name: "Karim",
+    //   name: "Karim",
+    active: true,
     albums: ["Cosmic", "Dark2", 12, 25],
 };
 const greetGuitarist = (guitarist) => {
-    return `Hello ${guitarist.name},What's Up?`;
+    var _a;
+    if (guitarist.name) {
+        return `Hello ${(_a = guitarist.name) === null || _a === void 0 ? void 0 : _a.toUpperCase()},What's Up?`;
+    }
+    return "Hello!!";
 };
-console.log(greetGuitarist(evh));
+console.log(greetGuitarist(jp));
 console.log(evh);
 console.log(jp);
