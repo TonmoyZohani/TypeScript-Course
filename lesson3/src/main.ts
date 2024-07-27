@@ -14,11 +14,11 @@ let test = [];
 // let bands: string[] = []
 let bands: string[] = [];
 bands.push("Van Halen");
-console.log(bands);
+// console.log(bands);
 bands[1] = "Artcell";
-console.log(bands);
+// console.log(bands);
 bands.push("Miles");
-console.log(bands);
+// console.log(bands);
 
 // Tuple
 let myTuple: [string, number, boolean] = ["Dave", 42, true];
@@ -60,8 +60,20 @@ exampleObj.prop1 = "John";
 
 type Guitarist = {
   name: string;
-  active: boolean;
+  active?: boolean;
   albums: (string | number)[];
 };
 
+let evh: Guitarist = {
+  name: "Tonmoy",
+  active: false,
+  albums: ["Dark", "Player", 83],
+};
 
+let jp: Guitarist = {
+  name: "Karim",
+  albums: ["Cosmic", "Dark2", 12, 25],
+};
+
+console.log(evh);
+console.log(jp);

@@ -10,11 +10,11 @@ let test = [];
 // let bands: string[] = []
 let bands = [];
 bands.push("Van Halen");
-console.log(bands);
+// console.log(bands);
 bands[1] = "Artcell";
-console.log(bands);
+// console.log(bands);
 bands.push("Miles");
-console.log(bands);
+// console.log(bands);
 // Tuple
 let myTuple = ["Dave", 42, true];
 let mixed = ["John", 1, false];
@@ -30,3 +30,14 @@ const exampleObj = {
     prop2: true,
 };
 exampleObj.prop1 = "John";
+let evh = {
+    name: "Tonmoy",
+    active: false,
+    albums: ["Dark", "Player", 83],
+};
+let jp = {
+    name: "Karim",
+    albums: ["Cosmic", "Dark2", 12, 25],
+};
+console.log(evh);
+console.log(jp);
