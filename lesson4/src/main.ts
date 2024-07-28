@@ -43,7 +43,23 @@ const multiply: mathFunction = (num1, num2) => {
   return num1 * num2;
 };
 
+// optional parameters
+
+const addAll = (num1: number, num2: number, num3?: number): number => {
+  if (num3 !== undefined) {
+    return num1 + num2 + num3;
+  }
+
+  return num1 + num2;
+};
+
+const sumAll = (num1: number, num2: number, num3: number): number => {
+  return num1 + num2 + num3;
+};
+
 console.log(add(5, 6));
 messagePrint("This is TypeScript Function");
 console.log(subTract(11, 6));
 console.log(multiply(3, 8));
+console.log(sumAll(7, 9, 8));
+console.log(addAll(5, 9));
