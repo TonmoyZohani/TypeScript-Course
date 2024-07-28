@@ -32,7 +32,12 @@ const subTract = function (num1: number, num2: number): number {
 };
 
 // created function type
-type mathFunction = (num1: number, num2: number) => number;
+// type mathFunction = (num1: number, num2: number) => number;
+
+// alternative
+interface mathFunction {
+  (num1: number, num2: number): number;
+}
 
 const multiply: mathFunction = (num1, num2) => {
   return num1 * num2;
@@ -41,4 +46,4 @@ const multiply: mathFunction = (num1, num2) => {
 console.log(add(5, 6));
 messagePrint("This is TypeScript Function");
 console.log(subTract(11, 6));
-console.log(multiply(3,8));
+console.log(multiply(3, 8));
