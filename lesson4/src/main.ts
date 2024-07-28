@@ -27,3 +27,5 @@ const messagePrint=(message:any):void=>{
     console.log(message);
 }
 
+console.log(add(5,6));
+messagePrint("This is TypeScript Function");
