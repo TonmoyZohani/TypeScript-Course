@@ -44,7 +44,6 @@ const multiply: mathFunction = (num1, num2) => {
 };
 
 // optional parameters
-
 const addAll = (num1: number, num2: number, num3?: number): number => {
   if (num3 !== undefined) {
     return num1 + num2 + num3;
