@@ -64,6 +64,12 @@ const createError = (errMsg: string): never => {
   throw new Error(errMsg);
 };
 
+const numberOrString = (value: string | number): string => {
+  if (typeof value === "string") return "string";
+  if (typeof value === "number") return "number";
+
+  return createError("This error never happen!");
+};
 
 console.log(add(5, 6));
 messagePrint("This is TypeScript Function");
