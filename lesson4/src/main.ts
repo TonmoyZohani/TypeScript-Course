@@ -71,6 +71,10 @@ const numberOrString = (value: string | number): string => {
   return createError("This error never happen!");
 };
 
+const isNumber = (value: any): boolean => {
+  return typeof value === "number" ? true : false;
+};
+
 console.log(add(5, 6));
 messagePrint("This is TypeScript Function");
 console.log(subTract(11, 6));
