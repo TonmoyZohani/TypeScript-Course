@@ -58,7 +58,6 @@ const sumAll = (num1: number, num2: number, num3: number): number => {
 };
 
 // rest parameters
-
 const calculateSum = (...nums: number[]): number => {
   return nums.reduce((sum, num) => sum + num, 0);
 };
