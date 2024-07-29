@@ -64,6 +64,7 @@ const createError = (errMsg: string): never => {
   throw new Error(errMsg);
 };
 
+// use of the number type
 const numberOrString = (value: string | number): string => {
   if (typeof value === "string") return "string";
   if (typeof value === "number") return "number";
@@ -71,6 +72,7 @@ const numberOrString = (value: string | number): string => {
   return createError("This error never happen!");
 };
 
+//custom type guard
 const isNumber = (value: any): boolean => {
   return typeof value === "number" ? true : false;
 };
