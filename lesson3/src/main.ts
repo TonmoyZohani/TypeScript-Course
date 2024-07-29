@@ -54,7 +54,7 @@ let evh: Guitarist = {
 };
 
 let jp: Guitarist = {
-  //   name: "Karim",
+  //name: "Karim",
   active: true,
   albums: ["Cosmic", "Dark2", 12, 25],
 };
