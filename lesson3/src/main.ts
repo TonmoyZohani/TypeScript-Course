@@ -15,7 +15,7 @@ bands.push("Van Halen");
 // console.log(bands);
 bands[1] = "Artcell";
 // console.log(bands);
-// bands.push("Miles");
+bands.push("Miles");
 // console.log(bands);
 
 // Tuple
