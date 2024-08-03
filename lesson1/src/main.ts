@@ -14,7 +14,7 @@ let b:number =5;
 let c:any = 3;
 let d:string = "15";
 
-console.log(message);
-console.log(a/b);
-console.log(a/c);
+// console.log(message);
+// console.log(a/b);
+// console.log(a/c);
 // console.log(a/d);
