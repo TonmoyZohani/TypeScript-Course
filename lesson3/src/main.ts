@@ -39,7 +39,7 @@ const exampleObj = {
   prop2: true,
 };
 
-exampleObj.prop1 = "John";
+// exampleObj.prop1 = "John";
 
 interface Guitarist {
   name?: string;
