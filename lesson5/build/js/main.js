@@ -10,4 +10,6 @@ const addOrConcat = (a, b, c) => {
         return a + b;
     return "" + a + b;
 };
+let myVal = addOrConcat(10, 15, "concat");
+console.log(myVal);
 console.log(a);

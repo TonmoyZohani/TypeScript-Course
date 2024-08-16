@@ -19,4 +19,7 @@ const addOrConcat = (
   return "" + a + b;
 };
 
+let myVal:string = addOrConcat(10,15,"concat") as string;
+console.log(myVal);
+
 console.log(a);
