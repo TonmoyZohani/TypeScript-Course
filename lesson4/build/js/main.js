@@ -30,6 +30,21 @@ const sumAll = (num1, num2, num3) => {
 const calculateSum = (...nums) => {
     return nums.reduce((sum, num) => sum + num, 0);
 };
+const createError = (errMsg) => {
+    throw new Error(errMsg);
+};
+// use of the number type
+const numberOrString = (value) => {
+    if (typeof value === "string")
+        return "string";
+    if (typeof value === "number")
+        return "number";
+    return createError("This error never happen!");
+};
+//custom type guard
+const isNumber = (value) => {
+    return typeof value === "number" ? true : false;
+};
 console.log(add(5, 6));
 messagePrint("This is TypeScript Function");
 console.log(subTract(11, 6));

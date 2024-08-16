@@ -66,7 +66,6 @@ const greetGuitarist = (guitarist: Guitarist) => {
 };
 
 console.log(greetGuitarist(jp));
-
 console.log(evh);
 console.log(jp);
 
