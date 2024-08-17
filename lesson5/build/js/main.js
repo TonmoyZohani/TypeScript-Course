@@ -12,4 +12,7 @@ const addOrConcat = (a, b, c) => {
 };
 let myVal = addOrConcat(10, 15, "concat");
 console.log(myVal);
+// Be careful! TS sees no problem - but a string is returned
+let nextVal = addOrConcat(2, 2, 'concat');
+console.log(nextVal);
 console.log(a);
