@@ -61,3 +61,18 @@ interface Musician{
     instrument:string,
     play(action:string):string  // A method that accepts a string parameter action and returns a string.
 }
+
+class Guitarist implements Musician {
+    name: string;
+    instrument: string;
+  
+    constructor(name: string, instrument: string) {
+      this.name = name;
+      this.instrument = instrument;
+    }
+  
+    play(action: string) {
+      return `${this.name} ${action} the ${this.instrument}`;
+    }
+  }
+  
