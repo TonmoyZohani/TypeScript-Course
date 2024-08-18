@@ -1,6 +1,6 @@
 class Person {
     // Properties
-    private firstName: string;
+    public firstName: string;
     private lastName: string;
     private age: number;
   
@@ -27,12 +27,32 @@ class Person {
     }
   }
   
+  class Employee extends Person {
+    private profession: string;
+  
+    constructor(
+      firstName: string,
+      lastName: string,
+      age: number,
+      profession: string
+    ) {
+      super(firstName, lastName, age);
+      this.profession = profession;
+    }
+  
+    public printText():string{
+      return `I am ${this.firstName},age ${this.getAge()} and my profession is ${this.profession}`
+    }
+  }
+  
   const person = new Person("Tonmoy", "Zohani", 30);
+  const employee = new Employee('Rakib','Khan',25,'App Developer');
   
   console.log(person.getFullName());
   console.log(person.getAge());
   
   person.increaseAge();
   console.log(person.getAge());
+  console.log(employee.printText())
   
   
