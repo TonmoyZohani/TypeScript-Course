@@ -55,4 +55,9 @@ class Person {
   console.log(person.getAge());
   console.log(employee.printText())
   
-  
+  /////////////////////////////////////
+interface Musician{
+    name:string,
+    instrument:string,
+    play(action:string):string  // A method that accepts a string parameter action and returns a string.
+}
